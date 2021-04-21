@@ -1,0 +1,156 @@
+@import "media-queries";
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: #252525;
+    margin: 0;
+
+    @include breakpoint-up-to("medium") {
+        font-size: 1rem;
+    }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+    color: inherit;
+}
+
+img,
+svg {
+    display: block;
+    vertical-align: middle;
+}
+
+input,
+button {
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+input,
+label {
+    display: block;
+}
+
+button {
+    border: 1px solid #252525;
+    cursor: pointer;
+}
+
+.full-width {
+    width: 100%;
+}
+
+.primary-title {
+    font-size: 1.875rem;
+    font-weight: 600;
+
+    @include breakpoint-up-to("medium") {
+        font-size: 1.625rem;
+    }
+}
+
+.standard-p {
+    line-height: 1.6;
+}
+
+.primary-btn {
+    background-color: #ffe85d;
+}
+
+.form-field-container {
+    width: 100%;
+    margin-bottom: 1.875rem;
+
+    @include breakpoint-up-to("medium") {
+        margin-bottom: 1.625rem;
+    }
+}
+
+.form-label {
+    margin-bottom: 0.938rem;
+
+    @include breakpoint-up-to("medium") {
+        margin-bottom: 0.75rem;
+    }
+}
+
+.form-input,
+.form-submission-btn {
+    width: 100%;
+    padding: 0.688rem 0.938rem;
+    border: 1px solid #000;
+
+    @include breakpoint-up-to("medium") {
+        padding: 0.563rem 0.75rem;
+    }
+}
+
+.form-input {
+    background: transparent;
+}
+
+.password-input-container {
+    position: relative;
+}
+
+.password-input {
+    padding-right: 4rem;
+}
+
+.show-hide-btn {
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    width: 30px;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.alert {
+    position: fixed;
+    background-color: #fbfaf7;
+    padding: 0.7rem 1.5rem;
+    border: 1px solid #000;
+    border-radius: 99rem;
+    box-shadow: 2px 2px 0 #000;
+
+    @include breakpoint-up-to("medium") {
+        padding: 0.6rem 1.3rem;
+        box-shadow: 2px 2px 0 #000;
+    }
+
+    @include breakpoint-up-to("small") {
+        padding: 0.5rem 1rem 0.7rem 1rem;
+    }
+}

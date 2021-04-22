@@ -114,7 +114,7 @@ export default function Dashboard() {
                     <img className="nav-interface__toggle-icon" src={toggleIcon} alt="Navbar Icon" />
                     <p className="nav-interface__text">{interfaceAnimation.nextStep ? interfaceAnimation.nextStep : currentStep}</p>
                     <div className="nav-interface__user-img">
-                        <img src={!user.local ? user.avatar : DefaultUserImg} src="User" />
+                        <img src={!user.local ? user.avatar : DefaultUserImg} alt="User" />
                     </div>
                 </div>
 
